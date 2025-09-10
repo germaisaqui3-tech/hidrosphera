@@ -10,71 +10,69 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pt-20">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 left-10 text-primary-lighter/20 animate-float">
-          <Droplets size={40} />
+        <div className="absolute top-32 left-20 text-white/10 animate-float">
+          <Droplets size={60} />
         </div>
-        <div className="absolute top-32 right-20 text-secondary-lighter/20 animate-float" style={{ animationDelay: "1s" }}>
-          <Leaf size={35} />
+        <div className="absolute top-20 right-32 text-white/10 animate-float" style={{ animationDelay: "1s" }}>
+          <Leaf size={45} />
         </div>
-        <div className="absolute bottom-20 left-20 text-primary-lighter/20 animate-float" style={{ animationDelay: "2s" }}>
-          <Recycle size={30} />
+        <div className="absolute bottom-32 left-32 text-white/10 animate-float" style={{ animationDelay: "2s" }}>
+          <Recycle size={40} />
         </div>
-        <div className="absolute bottom-40 right-10 text-secondary-lighter/20 animate-float" style={{ animationDelay: "0.5s" }}>
-          <Droplets size={25} />
+        <div className="absolute bottom-40 right-20 text-white/10 animate-float" style={{ animationDelay: "0.5s" }}>
+          <Droplets size={35} />
         </div>
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Hero Title */}
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 animate-fade-in">
-            Soluções Ambientais
-            <span className="block text-secondary-light">Inteligentes</span>
+          <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 animate-fade-in tracking-tight">
+            HIDROS<span className="text-secondary-light">PHERA</span>
           </h1>
 
           {/* Hero Subtitle */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Oferecemos excelentes soluções para necessidades relativas à área ambiental 
-            na criação de projetos eficientes e econômicos.
+          <p className="text-xl md:text-2xl text-white/90 mb-4 font-light animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            Consultoria Ambiental especializada em soluções sustentáveis
+          </p>
+
+          <p className="text-lg md:text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in font-body" style={{ animationDelay: "0.3s" }}>
+            Oferecemos excelentes soluções para suas necessidades ambientais com projetos eficientes, sustentáveis e econômicos
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in mb-16" style={{ animationDelay: "0.4s" }}>
             <Button
               onClick={() => scrollToSection("#servicos")}
               size="lg"
-              className="bg-white text-primary hover:bg-white/90 hover:shadow-soft transition-all duration-300 font-semibold px-8 py-3"
+              className="bg-white text-primary hover:bg-gray-50 transition-all duration-300 font-semibold px-8 py-4 rounded-full text-sm uppercase tracking-wide"
             >
-              Nossos Serviços
-              <ArrowRight className="ml-2" size={20} />
+              NOSSOS SERVIÇOS
             </Button>
             
             <Button
               onClick={() => scrollToSection("#contato")}
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300 font-semibold px-8 py-3"
+              className="border-2 border-white text-white hover:bg-white hover:text-primary transition-all duration-300 font-semibold px-8 py-4 rounded-full text-sm uppercase tracking-wide"
             >
-              Fale Conosco
+              CONTATO
             </Button>
           </div>
 
-          {/* Hero Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">15+</div>
-              <div className="text-white/80">Anos de Experiência</div>
+          {/* Hero Stats - Moved to separate icons section */}
+          <div className="flex justify-center items-center space-x-8 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
+              <Droplets className="text-white" size={24} />
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
-              <div className="text-white/80">Projetos Realizados</div>
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
+              <Leaf className="text-white" size={24} />
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">100%</div>
-              <div className="text-white/80">Satisfação dos Clientes</div>
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
+              <Recycle className="text-white" size={24} />
             </div>
           </div>
         </div>

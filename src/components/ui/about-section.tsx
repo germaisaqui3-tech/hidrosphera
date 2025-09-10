@@ -26,97 +26,101 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-gradient-subtle">
+    <section id="sobre" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
-              Sobre a Hidrosphera
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+              Sobre a <span className="text-secondary">HIDROSPHERA</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-body">
               Somos uma empresa especializada em dar suporte às diversas áreas do meio ambiente, 
               comprometida em oferecer as melhores soluções para seus projetos ambientais.
             </p>
           </div>
 
-          {/* Main Content */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Features Grid - Moved to top */}
+          <div className="grid md:grid-cols-4 gap-6 mb-16">
+            {features.map((feature, index) => (
+              <div key={index} className="text-center group">
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <feature.icon className="text-white" size={28} />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed font-body">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+          {/* Mission and Values Section */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
             <div className="space-y-6">
-              <h3 className="text-2xl md:text-3xl font-serif font-semibold text-foreground">
+              <h3 className="text-3xl font-bold text-gray-800">
                 Nossa Missão
               </h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-gray-600 leading-relaxed font-body">
                 A Hidrosphera tem como missão proporcionar soluções ambientais inovadoras e 
                 sustentáveis, contribuindo para o desenvolvimento de projetos que harmonizem 
                 crescimento econômico com preservação ambiental.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-gray-600 leading-relaxed font-body">
                 Nossa equipe multidisciplinar trabalha com dedicação para entregar resultados 
                 excepcionais, sempre priorizando a eficiência, economia e responsabilidade 
                 ambiental em cada projeto desenvolvido.
               </p>
+            </div>
 
-              <div className="pt-4">
-                <h4 className="text-xl font-semibold text-foreground mb-4">Nossos Valores:</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                    Sustentabilidade e responsabilidade ambiental
+            {/* Visual Content */}
+            <div className="relative">
+              <div className="bg-gray-50 rounded-2xl p-8">
+                <h4 className="text-xl font-semibold text-gray-800 mb-6">
+                  Nossa Visão
+                </h4>
+                <ul className="space-y-3 text-gray-600 font-body">
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    Ser referência em consultoria ambiental no Brasil
                   </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
-                    Excelência técnica e inovação
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    Promover desenvolvimento sustentável
                   </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                    Transparência e ética profissional
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    Inovar constantemente em soluções ambientais
                   </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
-                    Compromisso com resultados de qualidade
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    Construir um futuro mais verde para todos
                   </li>
                 </ul>
               </div>
             </div>
-
-            {/* Image/Visual Content */}
-            <div className="relative">
-              <div className="bg-gradient-ocean rounded-2xl p-8 shadow-ocean">
-                <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-                  <h4 className="text-xl font-semibold text-white mb-4">
-                    Por que escolher a Hidrosphera?
-                  </h4>
-                  <ul className="space-y-3 text-white/90">
-                    <li>✓ Equipe especializada e experiente</li>
-                    <li>✓ Soluções personalizadas para cada cliente</li>
-                    <li>✓ Compromisso com prazos e qualidade</li>
-                    <li>✓ Acompanhamento completo dos projetos</li>
-                    <li>✓ Preços competitivos e transparentes</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
 
-          {/* Features Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {features.map((feature, index) => (
-              <Card key={index} className="border-0 shadow-soft hover:shadow-ocean transition-all duration-300 group">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-gradient-ocean rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <feature.icon className="text-white" size={24} />
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+          {/* Stats Section */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 text-center">
+            <div>
+              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-gray-600 font-body">Projetos Realizados</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-primary mb-2">15+</div>
+              <div className="text-gray-600 font-body">Anos de Experiência</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-primary mb-2">100+</div>
+              <div className="text-gray-600 font-body">Clientes Atendidos</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-primary mb-2">50+</div>
+              <div className="text-gray-600 font-body">Especialistas</div>
+            </div>
           </div>
         </div>
       </div>

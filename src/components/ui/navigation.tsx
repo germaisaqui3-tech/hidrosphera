@@ -23,15 +23,15 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-gray-100">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
             <img
               src="/lovable-uploads/5b5d3104-0e01-4807-b0b7-0c30cea62190.png"
               alt="Hidrosphera Logo"
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
           </div>
 
@@ -41,7 +41,7 @@ const Navigation = () => {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-primary transition-colors duration-200 font-medium text-sm uppercase tracking-wide"
               >
                 {item.label}
               </button>
@@ -52,9 +52,9 @@ const Navigation = () => {
           <div className="hidden md:block">
             <Button
               onClick={() => scrollToSection("#contato")}
-              className="bg-gradient-ocean text-white hover:shadow-ocean transition-all duration-300"
+              className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full font-medium text-sm"
             >
-              Fale Conosco
+              SOLICITAR ORÇAMENTO
             </Button>
           </div>
 
