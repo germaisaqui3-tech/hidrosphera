@@ -18,44 +18,44 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 20% 15%;
 
-    /* Ocean blue primary */
-    --primary: 207 90% 35%;
+    /* Logo blue primary */
+    --primary: 240 65% 45%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 207 85% 45%;
-    --primary-lighter: 207 75% 85%;
+    --primary-light: 240 65% 55%;
+    --primary-lighter: 240 50% 85%;
 
-    /* Nature green secondary */
-    --secondary: 142 76% 36%;
+    /* Logo green secondary */
+    --secondary: 95 65% 55%;
     --secondary-foreground: 0 0% 98%;
-    --secondary-light: 142 71% 46%;
-    --secondary-lighter: 142 50% 85%;
+    --secondary-light: 95 65% 65%;
+    --secondary-lighter: 95 50% 85%;
 
     /* Soft backgrounds */
     --muted: 210 40% 98%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
     --accent: 195 100% 95%;
-    --accent-foreground: 207 90% 35%;
+    --accent-foreground: 240 65% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 207 90% 35%;
+    --ring: 240 65% 45%;
 
     --radius: 0.75rem;
 
     /* Environmental gradients */
-    --gradient-ocean: linear-gradient(135deg, hsl(207 90% 35%), hsl(195 100% 50%));
-    --gradient-nature: linear-gradient(135deg, hsl(142 76% 36%), hsl(120 60% 50%));
-    --gradient-hero: linear-gradient(135deg, hsl(207 90% 35%) 0%, hsl(195 100% 50%) 50%, hsl(142 76% 36%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 99%), hsl(195 100% 98%));
+    --gradient-ocean: linear-gradient(135deg, hsl(240 65% 45%), hsl(200 100% 50%));
+    --gradient-nature: linear-gradient(135deg, hsl(95 65% 55%), hsl(120 60% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(240 65% 45%) 0%, hsl(200 100% 50%) 50%, hsl(95 65% 55%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 99%), hsl(200 100% 98%));
 
     /* Environmental shadows */
-    --shadow-soft: 0 4px 6px -1px hsl(207 90% 35% / 0.1), 0 2px 4px -1px hsl(207 90% 35% / 0.06);
-    --shadow-ocean: 0 10px 25px -5px hsl(207 90% 35% / 0.25);
-    --shadow-nature: 0 10px 25px -5px hsl(142 76% 36% / 0.25);
+    --shadow-soft: 0 4px 6px -1px hsl(240 65% 45% / 0.1), 0 2px 4px -1px hsl(240 65% 45% / 0.06);
+    --shadow-ocean: 0 10px 25px -5px hsl(240 65% 45% / 0.25);
+    --shadow-nature: 0 10px 25px -5px hsl(95 65% 55% / 0.25);
 
     /* Smooth transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

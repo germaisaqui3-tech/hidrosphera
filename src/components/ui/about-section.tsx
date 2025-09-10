@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Target, Award, Users } from "lucide-react";
+import environmentalHero from "@/assets/environmental-hero.jpg";
 
 const AboutSection = () => {
   const features = [
@@ -77,28 +78,35 @@ const AboutSection = () => {
 
             {/* Visual Content */}
             <div className="relative">
-              <div className="bg-gray-50 rounded-2xl p-8">
-                <h4 className="text-xl font-semibold text-gray-800 mb-6">
-                  Nossa Visão
-                </h4>
-                <ul className="space-y-3 text-gray-600 font-body">
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                    Ser referência em consultoria ambiental no Brasil
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                    Promover desenvolvimento sustentável
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                    Inovar constantemente em soluções ambientais
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                    Construir um futuro mais verde para todos
-                  </li>
-                </ul>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src={environmentalHero} 
+                  alt="Tecnologia ambiental sustentável da HIDROSPHERA"
+                  className="w-full h-80 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-hero bg-opacity-90 flex items-center justify-center p-8">
+                  <div className="text-white text-center">
+                    <h4 className="text-2xl font-bold mb-6">Nossa Visão</h4>
+                    <ul className="space-y-4 text-left">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-white rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Ser referência em consultoria ambiental no Brasil
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-white rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Promover desenvolvimento sustentável
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-white rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Inovar constantemente em soluções ambientais
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-white rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Construir um futuro mais verde para todos
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

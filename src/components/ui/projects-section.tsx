@@ -9,6 +9,9 @@ import {
   Calendar,
   CheckCircle
 } from "lucide-react";
+import waterTesting from "@/assets/water-testing.jpg";
+import renewableEnergy from "@/assets/renewable-energy.jpg";
+import wasteManagement from "@/assets/waste-management.jpg";
 
 const ProjectsSection = () => {
   const projects = [
@@ -79,7 +82,11 @@ const ProjectsSection = () => {
           {/* Projects Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
-              <div className="h-48 bg-gradient-ocean"></div>
+              <img 
+                src={waterTesting} 
+                alt="Sistema de Tratamento de Efluentes"
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Sistema de Tratamento de Efluentes</h3>
                 <p className="text-gray-600 text-sm mb-3 font-body">Projeto de sistema de tratamento para indústria alimentícia</p>
@@ -96,10 +103,14 @@ const ProjectsSection = () => {
               </div>
             </div>
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
-              <div className="h-48 bg-gradient-nature"></div>
+              <img 
+                src={renewableEnergy} 
+                alt="Energia Renovável Sustentável"
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Complexo Residencial Sustentável</h3>
-                <p className="text-gray-600 text-sm mb-3 font-body">EIV e licenciamento para empreendimento de grande porte</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Energia Renovável Sustentável</h3>
+                <p className="text-gray-600 text-sm mb-3 font-body">Projetos de energia solar e eólica para empresas sustentáveis</p>
                 <div className="flex items-center text-xs text-gray-500 mb-4">
                   <MapPin size={12} className="mr-1" />
                   Rio de Janeiro, RJ
@@ -107,17 +118,21 @@ const ProjectsSection = () => {
                   2023
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">EIV</span>
-                  <span className="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full">PRAD</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Energia Solar</span>
+                  <span className="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full">Sustentabilidade</span>
                 </div>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
-              <div className="h-48 bg-gray-200"></div>
+              <img 
+                src={wasteManagement} 
+                alt="Gestão de Resíduos Ambientais"
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Centro Logístico Ambiental</h3>
-                <p className="text-gray-600 text-sm mb-3 font-body">PGRS e gestão ambiental para centro de distribuição</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Gestão de Resíduos Ambientais</h3>
+                <p className="text-gray-600 text-sm mb-3 font-body">Sistema integrado de gestão e tratamento de resíduos industriais</p>
                 <div className="flex items-center text-xs text-gray-500 mb-4">
                   <MapPin size={12} className="mr-1" />
                   Minas Gerais, MG
@@ -126,7 +141,7 @@ const ProjectsSection = () => {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">PGRS</span>
-                  <span className="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full">ISO 14001</span>
+                  <span className="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full">Tratamento</span>
                 </div>
               </div>
             </div>
