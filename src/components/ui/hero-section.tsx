@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Leaf, Droplets, Recycle } from "lucide-react";
+import environmentalHero from "@/assets/environmental-hero.jpg";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -10,7 +11,16 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pt-20">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={environmentalHero} 
+          alt="Tecnologia ambiental sustentável"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-hero bg-opacity-80"></div>
+      </div>
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-32 left-20 text-white/10 animate-float">
