@@ -19,35 +19,48 @@ const Services = () => {
   const services = [
     {
       icon: Droplets,
-      title: 'Análise e Tratamento de Águas',
-      description: 'Monitoramento completo da qualidade da água, análises físico-químicas e microbiológicas.',
+      title: 'Tratamento de Efluentes e Águas',
+      description: 'Soluções completas para tratamento de águas e efluentes industriais com tecnologia avançada.',
       image: labTesting,
-      features: ['Análises laboratoriais', 'Tratamento de efluentes', 'Monitoramento contínuo', 'Consultoria técnica'],
+      features: [
+        'Realização de estudos de tratabilidade e viabilidade técnica e econômica',
+        'Elaboração de projetos básicos e executivos de ETE',
+        'Elaboração de projetos de ampliação e adequação de ETE',
+        'Realização de estudos para adequação operacional de ETE e partidas de ETE',
+        'Realização do acompanhamento de operação de ETE',
+        'Realização de amostragens de efluentes',
+        'Acompanhamento de operação de ETA'
+      ],
       highlight: 'Laboratório certificado'
     },
     {
-      icon: Zap,
-      title: 'Energia Renovável',
-      description: 'Projetos sustentáveis em energia solar, eólica e soluções de eficiência energética.',
-      image: renewableEnergyWide,
-      features: ['Energia solar', 'Energia eólica', 'Eficiência energética', 'Consultoria em sustentabilidade'],
-      highlight: 'Certificação ANEEL'
+      icon: Recycle,
+      title: 'Resíduos Sólidos',
+      description: 'Gestão sustentável e eficiente de resíduos sólidos com foco na economia circular.',
+      image: wasteManagementWide,
+      features: [
+        'Elaboração de plano de gerenciamento de resíduos sólidos - PGRS',
+        'Elaboração de projetos de depósitos temporários de resíduos - DTR',
+        'Elaboração de projetos de implantação da coleta seletiva',
+        'Assessoria e treinamento de operação do Sistema MTR - MG para emissão de MTR',
+        'Assessoria e treinamento de operação do Sistema MTR - MG para preenchimento e envio da DMR'
+      ],
+      highlight: 'ISO 14001'
     },
     {
       icon: Microscope,
-      title: 'Consultoria Ambiental',
-      description: 'Assessoria especializada em licenciamento ambiental e estudos de impacto.',
+      title: 'Gestão Ambiental',
+      description: 'Consultoria especializada em licenciamento ambiental e conformidade regulatória.',
       image: fieldWork,
-      features: ['Licenciamento ambiental', 'EIA/RIMA', 'Monitoramento ambiental', 'Perícias técnicas'],
+      features: [
+        'Elaboração de estudos ambientais (LAS, RAS, RCA, PCA e RADA) para fins de obtenção, ampliação e renovação de Licença Ambiental',
+        'Acompanhamento do cumprimento das condicionantes de licença ambiental, TAC e outorga',
+        'Emissão de Certificado de Uso Insignificante da Água',
+        'Elaboração e envio da Declaração de Carga Poluidora (DCP)',
+        'Elaboração e envio do RAPP junto ao IBAMA',
+        'Elaboração e envio do INRS junto ao SINIR'
+      ],
       highlight: 'Equipe multidisciplinar'
-    },
-    {
-      icon: Recycle,
-      title: 'Gestão de Resíduos',
-      description: 'Soluções completas para gerenciamento, tratamento e destinação adequada de resíduos.',
-      image: wasteManagementWide,
-      features: ['Gestão de resíduos', 'Reciclagem', 'Compostagem', 'Destinação final'],
-      highlight: 'ISO 14001'
     }
   ];
 
@@ -108,15 +121,15 @@ const Services = () => {
                     {service.description}
                   </p>
 
-                  {/* Features List */}
-                  <div className="grid grid-cols-2 gap-2">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center space-x-2">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                        <span className="text-sm text-muted-foreground">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
+                   {/* Features List */}
+                   <div className="space-y-2 max-h-48 overflow-y-auto">
+                     {service.features.map((feature, idx) => (
+                       <div key={idx} className="flex items-start space-x-2">
+                         <div className="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></div>
+                         <span className="text-sm text-muted-foreground leading-relaxed">{feature}</span>
+                       </div>
+                     ))}
+                   </div>
 
                   <Button 
                     variant="outline" 
