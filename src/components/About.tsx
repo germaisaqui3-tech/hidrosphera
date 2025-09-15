@@ -199,11 +199,11 @@ const About = () => {
               </div>
             </div>
 
-            <div className="text-center mt-8">
+            {/* <div className="text-center mt-8">
               <Button variant="default" size="lg">
                 Conheça Nossa História
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* Stats */}
