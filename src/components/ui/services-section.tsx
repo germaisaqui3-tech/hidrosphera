@@ -1,7 +1,7 @@
-import Partners from '@/components/Partners';
+import ClientsAndPartners from '@/components/Clients';
 
 const ServicesSection = () => {
-  return <Partners />;
+  return <ClientsAndPartners />;
 };
 
 export default ServicesSection;

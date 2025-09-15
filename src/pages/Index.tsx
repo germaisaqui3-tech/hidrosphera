@@ -5,8 +5,7 @@ import Certifications from '@/components/Certifications';
 import Services from '@/components/Services';
 import Stats from '@/components/Stats';
 import Projects from '@/components/Projects';
-import Clients from '@/components/Clients';
-import Partners from '@/components/Partners';
+import ClientsAndPartners from '@/components/Clients';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -21,8 +20,7 @@ const Index = () => {
       <Services />
       <Stats />
       <Projects />
-      <Clients />
-      <Partners />
+      <ClientsAndPartners />
       <Testimonials />
       <Contact />
       <Footer />
