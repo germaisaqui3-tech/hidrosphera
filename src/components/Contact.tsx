@@ -190,9 +190,9 @@ const Contact = () => {
                       <Button 
                         variant="secondary" 
                         size="sm"
-                        onClick={() => document.getElementById('message')?.scrollIntoView({ behavior: 'smooth' })}
+                        onClick={() => window.location='https://wa.me/5555328411119?text=Ol%C3%A1%20preciso%20de%20ajuda'}
                       >
-                        Ligar Agora
+                        Falar Agora
                       </Button>
                     </div>
                   </CardContent>
