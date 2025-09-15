@@ -48,7 +48,7 @@ const About = () => {
               <div className="flex flex-wrap gap-2 lg:justify-end">
                 <Badge variant="secondary" className="flex items-center gap-1">
                   <GraduationCap className="w-3 h-3" />
-                  Mestres e Doutores
+                  Engenheiros e Técnicos
                 </Badge>
                 <Badge variant="secondary" className="flex items-center gap-1">
                   <Shield className="w-3 h-3" />
