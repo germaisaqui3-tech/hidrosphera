@@ -83,7 +83,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Telefone',
-      details: ['(32) 98411-1197', '(11) 3333-4444', 'WhatsApp: (11) 9999-8888']
+      details: ['(32) 98411-1197', '(11) 3333-4444', 'WhatsApp: +55 (32) 8411-1197']
     },
     {
       icon: Mail,
