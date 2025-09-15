@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Award, Users, Target, Lightbulb } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
+import { Award, Users, Target, Lightbulb, GraduationCap, Shield, FileCheck, Globe } from 'lucide-react';
 const About = () => {
   const features = [{
     icon: Award,
@@ -27,7 +28,10 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Sobre a <span className="text-primary">HIDROSPHERA</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Somos uma empresa no mercado deste 2001, especializada em oferecer suporte completo às diversas áreas do meio ambiente, desenvolvendo soluções inovadoras e sustentáveis para um futuro melhor.</p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              A HIDROSPHERA é estruturada por uma equipe titulada e qualificada, apresentando um corpo técnico multidisciplinar 
+              para dar suporte às diversas áreas do meio ambiente. Oferecemos excelência em soluções ambientais desde 2001.
+            </p>
           </div>
 
           {/* Content Grid */}
@@ -35,34 +39,62 @@ const About = () => {
             {/* Left Content */}
             <div className="space-y-6">
               <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-foreground">Corpo Técnico Multidisciplinar</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Nossa equipe é composta por profissionais titulados e qualificados em diversas áreas ambientais:
+                  engenheiros ambientais, químicos, biólogos, geólogos e especialistas em sustentabilidade.
+                  Cada projeto é conduzido por especialistas com formação específica e experiência comprovada.
+                </p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <Badge variant="secondary" className="flex items-center gap-1">
+                    <GraduationCap className="w-3 h-3" />
+                    Mestres e Doutores
+                  </Badge>
+                  <Badge variant="secondary" className="flex items-center gap-1">
+                    <Shield className="w-3 h-3" />
+                    Certificações Técnicas
+                  </Badge>
+                  <Badge variant="secondary" className="flex items-center gap-1">
+                    <FileCheck className="w-3 h-3" />
+                    Registro nos CREAs
+                  </Badge>
+                </div>
+              </div>
+
+              <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-foreground">Missão</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Fornecer soluções ambientais eficientes e econômicas que contribuam para a preservação 
-                  do meio ambiente e o desenvolvimento sustentável. Trabalhamos com tecnologias avançadas 
-                  e metodologias comprovadas para garantir resultados excepcionais.
+                  do meio ambiente e o desenvolvimento sustentável, com base em conhecimento técnico 
+                  especializado e inovação tecnológica.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-foreground">
-                  Visão
-                </h3>
+                <h3 className="text-2xl font-semibold text-foreground">Visão</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Ser reconhecida como referência  em soluções ambientais inovadoras, contribuindo ativamente para um planeta mais sustentável e equilibrado para as futuras gerações. 
+                  Ser reconhecida como referência nacional em soluções ambientais inovadoras, 
+                  contribuindo ativamente para um planeta mais sustentável através da excelência 
+                  técnica e compromisso com resultados mensuráveis.
                 </p>
               </div>
+              
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-foreground">Valores</h3>
-                <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                    <li>Determinação</li>
-                    <li>Companheirismo</li>
-                    <li>Organização</li>
-                    <li>Profissionalismo</li>
-                    <li>Dinamismo</li>
-                    <li>Respeito</li>
-                    <li>Comunicação</li>
-                    <li>Humildade</li>
-                </ul>
+                <div className="grid grid-cols-2 gap-2">
+                  <ul className="space-y-1 text-muted-foreground">
+                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>Determinação</li>
+                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>Companheirismo</li>
+                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>Organização</li>
+                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>Profissionalismo</li>
+                  </ul>
+                  <ul className="space-y-1 text-muted-foreground">
+                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>Dinamismo</li>
+                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>Respeito</li>
+                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>Comunicação</li>
+                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>Humildade</li>
+                  </ul>
+                </div>
               </div>
               
 
