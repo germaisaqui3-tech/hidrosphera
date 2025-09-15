@@ -2,9 +2,9 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight, ExternalLink } from 'lucide-react';
-import project1 from '@/assets/project-1.jpg';
-import project2 from '@/assets/project-2.jpg';
-import project3 from '@/assets/project-3.jpg';
+import project1 from '@/assets/project1.jpg';
+import project2 from '@/assets/project2.jpg';
+import project3 from '@/assets/project3.jpg';
 
 const Projects = () => {
   const projects = [
