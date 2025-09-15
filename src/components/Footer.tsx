@@ -26,9 +26,9 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    // { icon: Instagram, href: '#', label: 'Instagram' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' }
+    // { icon: Twitter, href: '#', label: 'Twitter' }
   ];
 
   return (
@@ -52,11 +52,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-background/80">
                 <Phone className="w-4 h-4" />
-                <span className="text-sm">(11) 9999-8888</span>
+                <span className="text-sm">(32) 98411-1197</span>
               </div>
               <div className="flex items-center space-x-3 text-background/80">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">contato@hidrosphera.com.br</span>
+                <span className="text-sm">hidrosphera@gemail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-background/80">
                 <MapPin className="w-4 h-4" />
