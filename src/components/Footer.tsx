@@ -140,7 +140,7 @@ const Footer = () => {
             
             <div className="flex flex-wrap items-center space-x-6 text-background/60 text-sm">
               <span>Desenvolvido com</span>
-              <span className="text-primary">♥</span>
+              <span className="text-primary">Mais Aqui</span>
               <span>para um futuro sustentável</span>
             </div>
           </div>
