@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Award, Users, Target, Lightbulb, GraduationCap, Shield, FileCheck, Globe } from 'lucide-react';
+import { Award, Users, Target, Lightbulb, GraduationCap, Shield, FileCheck, Globe, User, Beaker, Briefcase, Mail } from 'lucide-react';
 const About = () => {
   const features = [{
     icon: Award,
@@ -58,6 +58,80 @@ const About = () => {
                     <FileCheck className="w-3 h-3" />
                     Registro nos CREAs
                   </Badge>
+                </div>
+              </div>
+
+              {/* Team Members */}
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-foreground">Nossa Equipe</h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Conheça os profissionais especializados que lideram nossos projetos ambientais.
+                </p>
+                
+                <div className="grid md:grid-cols-2 gap-4">
+                  {/* Cristiane Mayara */}
+                  <Card className="hover:shadow-card transition-all duration-300">
+                    <CardContent className="p-6">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                          <User className="w-6 h-6 text-primary-foreground" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h4 className="text-lg font-semibold text-foreground mb-2">
+                            Cristiane Mayara Reis Oliveira
+                          </h4>
+                          <div className="space-y-1 mb-3">
+                            <Badge variant="secondary" className="text-xs">
+                              <GraduationCap className="w-3 h-3 mr-1" />
+                              Engenheira Ambiental e Sanitarista
+                            </Badge>
+                            <Badge variant="secondary" className="text-xs">
+                              <Shield className="w-3 h-3 mr-1" />
+                              Engenheira de Segurança do Trabalho
+                            </Badge>
+                            <Badge variant="secondary" className="text-xs">
+                              <Briefcase className="w-3 h-3 mr-1" />
+                              Engenheira da Qualidade
+                            </Badge>
+                          </div>
+                          <div className="flex items-center text-sm text-muted-foreground">
+                            <Mail className="w-4 h-4 mr-2" />
+                            <span className="truncate">mro.or.come@gmail.com</span>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  {/* Nilcéia Terezinha */}
+                  <Card className="hover:shadow-card transition-all duration-300">
+                    <CardContent className="p-6">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                          <User className="w-6 h-6 text-primary-foreground" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h4 className="text-lg font-semibold text-foreground mb-2">
+                            Nilcéia Terezinha de Oliveira
+                          </h4>
+                          <div className="space-y-1 mb-3">
+                            <Badge variant="secondary" className="text-xs">
+                              <Beaker className="w-3 h-3 mr-1" />
+                              Técnica em Química
+                            </Badge>
+                            <Badge variant="secondary" className="text-xs">
+                              <Globe className="w-3 h-3 mr-1" />
+                              Tecnóloga em Meio Ambiente
+                            </Badge>
+                          </div>
+                          <div className="flex items-center text-sm text-muted-foreground">
+                            <Mail className="w-4 h-4 mr-2" />
+                            <span className="truncate">noliveirater@yahoo.com.br</span>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
 
