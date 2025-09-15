@@ -41,7 +41,11 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="sm">
+            <Button 
+              variant="hero" 
+              size="sm"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Entre em Contato
             </Button>
           </div>
@@ -73,7 +77,12 @@ const Header = () => {
                   {item.label}
                 </a>
               ))}
-              <Button variant="hero" size="sm" className="w-fit">
+              <Button 
+                variant="hero" 
+                size="sm" 
+                className="w-fit"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Entre em Contato
               </Button>
             </div>

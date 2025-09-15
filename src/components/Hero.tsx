@@ -43,11 +43,20 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeIn" style={{ animationDelay: '0.9s' }}>
-            <Button variant="hero" size="lg" className="group">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="group"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Nossos Projetos
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="glass" size="lg">
+            <Button 
+              variant="glass" 
+              size="lg"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Saiba Mais
             </Button>
           </div>

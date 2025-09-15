@@ -89,7 +89,11 @@ const Partners = () => {
                 Estamos sempre abertos a novas parcerias estratégicas que possam agregar valor 
                 aos nossos clientes e contribuir para um futuro mais sustentável.
               </p>
-              <Button variant="hero" size="lg">
+              <Button 
+                variant="hero" 
+                size="lg"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Fale Sobre Parcerias
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>

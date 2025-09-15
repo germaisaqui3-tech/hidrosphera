@@ -162,7 +162,11 @@ const Contact = () => {
                           Agende uma avaliação inicial sem compromisso
                         </p>
                       </div>
-                      <Button variant="outline" size="sm">
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        onClick={() => document.getElementById('message')?.scrollIntoView({ behavior: 'smooth' })}
+                      >
                         Agendar
                       </Button>
                     </div>
@@ -183,7 +187,11 @@ const Contact = () => {
                           Suporte 24h para emergências ambientais
                         </p>
                       </div>
-                      <Button variant="secondary" size="sm">
+                      <Button 
+                        variant="secondary" 
+                        size="sm"
+                        onClick={() => document.getElementById('message')?.scrollIntoView({ behavior: 'smooth' })}
+                      >
                         Ligar Agora
                       </Button>
                     </div>
@@ -260,7 +268,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div className="space-y-2">
+                  <div className="space-y-2" id="message">
                     <Label htmlFor="message">Mensagem</Label>
                     <Textarea 
                       id="message" 
