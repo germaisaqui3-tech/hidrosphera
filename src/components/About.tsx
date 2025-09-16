@@ -39,11 +39,7 @@ const About = () => {
             <div className="grid lg:grid-cols-3 gap-8 items-center">
               <div className="lg:col-span-2 space-y-4">
                 <h3 className="text-2xl font-semibold text-foreground">Corpo Técnico Multidisciplinar</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Nossa equipe é composta por profissionais titulados e qualificados em diversas áreas ambientais:
-                  engenheiros ambientais, químicos, biólogos, geólogos e especialistas em sustentabilidade.
-                  Cada projeto é conduzido por especialistas com formação específica e experiência comprovada.
-                </p>
+                <p className="text-muted-foreground leading-relaxed">Nossa equipe é composta por profissionais titulados e qualificados em diversas áreas ambientais: engenheiros ambientais, técnico em química e especialistas em sustentabilidade. Cada projeto é conduzido por especialistas com formação específica e experiência comprovada.</p>
               </div>
               <div className="flex flex-wrap gap-2 lg:justify-end">
                 <Badge variant="secondary" className="flex items-center gap-1">
@@ -65,8 +61,7 @@ const About = () => {
           {/* Features Grid - Full Width */}
           <div className="mb-16">
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {features.map((feature, index) => (
-                <Card key={index} className="group hover:shadow-card transition-all duration-300 hover:-translate-y-2">
+              {features.map((feature, index) => <Card key={index} className="group hover:shadow-card transition-all duration-300 hover:-translate-y-2">
                   <CardContent className="p-6 text-center">
                     <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <feature.icon className="w-8 h-8 text-primary-foreground" />
@@ -78,8 +73,7 @@ const About = () => {
                       {feature.description}
                     </p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
 
@@ -203,7 +197,7 @@ const About = () => {
               <Button variant="default" size="lg">
                 Conheça Nossa História
               </Button>
-            </div> */}
+             </div> */}
           </div>
 
           {/* Stats */}
