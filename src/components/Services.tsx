@@ -39,7 +39,7 @@ const Services = () => {
         'Realização de amostragens de efluentes',
         'Acompanhamento de operação de ETA'
       ],
-      highlight: 'Laboratório certificado'
+      highlight: ''
     },
     {
       icon: Recycle,
@@ -53,7 +53,7 @@ const Services = () => {
         'Assessoria e treinamento de operação do Sistema MTR - MG para emissão de MTR',
         'Assessoria e treinamento de operação do Sistema MTR - MG para preenchimento e envio da DMR'
       ],
-      highlight: 'ISO 14001'
+      highlight: ''
     },
     {
       icon: Microscope,
