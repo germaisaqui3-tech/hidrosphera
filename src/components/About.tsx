@@ -52,7 +52,7 @@ const About = () => {
                 </Badge>
                 <Badge variant="secondary" className="flex items-center gap-1">
                   <FileCheck className="w-3 h-3" />
-                  Registro nos CREAs
+                  Registro nos CRQ
                 </Badge>
               </div>
             </div>
@@ -114,7 +114,7 @@ const About = () => {
                       </div>
                       <div className="flex items-center text-sm text-muted-foreground">
                         <Mail className="w-4 h-4 mr-2" />
-                        <span className="truncate">mro.or.come@gmail.com</span>
+                        <span className="truncate">mro.cristiane@gmail.com</span>
                       </div>
                     </div>
                   </div>
@@ -168,7 +168,7 @@ const About = () => {
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-foreground">Visão</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Ser reconhecida como referência nacional em soluções ambientais inovadoras, 
+                  Ser reconhecida como referência em soluções ambientais inovadoras, 
                   contribuindo ativamente para um planeta mais sustentável através da excelência 
                   técnica e compromisso com resultados mensuráveis.
                 </p>
