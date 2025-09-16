@@ -165,7 +165,7 @@ const Contact = () => {
                       <Button 
                         variant="outline" 
                         size="sm"
-                        onClick={() => window.location='https://wa.me/55553284111197?text=Ol%C3%A1%20preciso%20de%20ajuda'}
+                        onClick={() => window.open('https://wa.me/5555328411119?text=Ol%C3%A1%20preciso%20de%20ajuda', '_blank')}
                       >
                         Agendar
                       </Button>
@@ -190,7 +190,7 @@ const Contact = () => {
                       <Button 
                         variant="secondary" 
                         size="sm"
-                        onClick={() => window.location='https://wa.me/55553284111197?text=Ol%C3%A1%20preciso%20de%20ajuda'}
+                        onClick={() => window.open('https://wa.me/5555328411119?text=Ol%C3%A1%20preciso%20de%20ajuda', '_blank')}
                       >
                         Falar Agora
                       </Button>
