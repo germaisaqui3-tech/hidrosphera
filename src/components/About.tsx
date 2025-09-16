@@ -26,7 +26,7 @@ const About = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Sobre a <span className="text-primary">HIDROSPHERA</span>
+              Sobre a <span className="text-primary">HIDROS</span><span className="text-secondary">PHERA</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               A HIDROSPHERA é estruturada por uma equipe titulada e qualificada, apresentando um corpo técnico multidisciplinar 
