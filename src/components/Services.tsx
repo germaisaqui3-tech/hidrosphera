@@ -15,7 +15,7 @@ import { useState } from 'react';
 import labTesting from '@/assets/lab-testing.jpg';
 import renewableEnergyWide from '@/assets/renewable-energy-wide.jpg';
 import fieldWork from '@/assets/field-work.jpg';
-import wasteManagementWide from '@/assets/waste-management-wide.jpg';
+import residuosSolidosNew from '@/assets/residuos-solidos-new.webp';
 
 const Services = () => {
   const [expandedService, setExpandedService] = useState<number | null>(null);
@@ -45,7 +45,7 @@ const Services = () => {
       icon: Recycle,
       title: 'Resíduos Sólidos',
       description: 'Gestão sustentável e eficiente de resíduos sólidos com foco na economia circular.',
-      image: wasteManagementWide,
+      image: residuosSolidosNew,
       features: [
         'Elaboração de plano de gerenciamento de resíduos sólidos - PGRS',
         'Elaboração de projetos de depósitos temporários de resíduos - DTR',
