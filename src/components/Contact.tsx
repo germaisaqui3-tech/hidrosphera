@@ -78,7 +78,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Endereço',
-      details: ['Rua Manoel vilar, 13 Loja 4', 'Democrata - Juiz de Fora/MG', 'CEP: 36035-240']
+      details: ['Rua Manoel Vilar, 13 Loja 4', 'Democrata - Juiz de Fora/MG', 'CEP: 36035-240']
     },
     {
       icon: FaWhatsapp,
@@ -88,7 +88,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'E-mail',
-      details: ['hidrosphera@gmail.com.br']
+      details: ['hidrosphera@gmail.com']
     },
     {
       icon: Clock,

@@ -7,27 +7,27 @@ const Footer = () => {
     company: [
       { label: 'Sobre Nós', href: '#about' },
       { label: 'Nossa Equipe', href: '#team' },
-      { label: 'Carreiras', href: '#careers' },
-      { label: 'Blog', href: '#blog' }
+      // { label: 'Carreiras', href: '#careers' },
+      // { label: 'Blog', href: '#blog' }
     ],
     services: [
       { label: 'Recursos Hídricos', href: '#services' },
       { label: 'Gestão de Resíduos', href: '#services' },
-      { label: 'Qualidade do Ar', href: '#services' },
+      // { label: 'Qualidade do Ar', href: '#services' },
       { label: 'Licenciamento', href: '#services' }
     ],
     legal: [
       { label: 'Política de Privacidade', href: '#privacy' },
       { label: 'Termos de Uso', href: '#terms' },
-      { label: 'Certificações', href: '#certifications' },
-      { label: 'Compliance', href: '#compliance' }
+      // { label: 'Certificações', href: '#certifications' },
+      // { label: 'Compliance', href: '#compliance' }
     ]
   };
 
   const socialLinks = [
     { icon: Facebook, href: '#', label: 'Facebook' },
     // { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin', label: 'LinkedIn' },
     // { icon: Twitter, href: '#', label: 'Twitter' }
   ];
 
@@ -56,7 +56,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-background/80">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">hidrosphera@gemail.com</span>
+                <span className="text-sm">hidrosphera@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-background/80">
                 <MapPin className="w-4 h-4" />
