@@ -81,8 +81,8 @@ const Contact = () => {
       details: ['Rua Manoel vilar, 13 Loja 4', 'Democrata - Juiz de Fora/MG', 'CEP: 36035-240']
     },
     {
-      icon: Phone,
-      title: 'Telefone',
+      icon: MessageSquare,
+      title: 'WhatsApp',
       details: ['(32) 98411-1197']
     },
     {
