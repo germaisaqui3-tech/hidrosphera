@@ -13,7 +13,7 @@ import {
   Send,
   Loader2
 } from 'lucide-react';
-import WhatsAppIcon from '@/components/ui/whatsapp-icon';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -81,7 +81,7 @@ const Contact = () => {
       details: ['Rua Manoel vilar, 13 Loja 4', 'Democrata - Juiz de Fora/MG', 'CEP: 36035-240']
     },
     {
-      icon: WhatsAppIcon,
+      icon: FaWhatsapp,
       title: 'WhatsApp',
       details: ['(32) 98411-1197']
     },
@@ -120,17 +120,13 @@ const Contact = () => {
                   Informações de Contato
                 </h3>
                 <div className="grid sm:grid-cols-2 gap-6">
-                   {contactInfo.map((item, index) => (
-                     <Card key={index} className="border-border/50 hover:shadow-card transition-shadow duration-300">
-                       <CardHeader className="pb-3">
-                         <div className="flex items-center space-x-3">
-                           <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                             {item.icon === WhatsAppIcon ? (
-                               <WhatsAppIcon size={20} className="text-primary-foreground" />
-                             ) : (
-                               <item.icon className="w-5 h-5 text-primary-foreground" />
-                             )}
-                           </div>
+                  {contactInfo.map((item, index) => (
+                    <Card key={index} className="border-border/50 hover:shadow-card transition-shadow duration-300">
+                      <CardHeader className="pb-3">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                            <item.icon className="w-5 h-5 text-primary-foreground" />
+                          </div>
                           <CardTitle className="text-lg text-foreground">
                             {item.title}
                           </CardTitle>
@@ -156,7 +152,7 @@ const Contact = () => {
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4">
                       <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                        <WhatsAppIcon size={24} className="text-primary-foreground" />
+                        <FaWhatsapp className="w-6 h-6 text-primary-foreground" />
                       </div>
                       <div className="flex-1">
                         <h4 className="font-semibold text-foreground mb-1">
