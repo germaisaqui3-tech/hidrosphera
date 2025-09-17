@@ -15,7 +15,7 @@ import { useState } from 'react';
 import labTesting from '@/assets/lab-testing.jpg';
 import renewableEnergyWide from '@/assets/renewable-energy-wide.jpg';
 import fieldWork from '@/assets/field-work.jpg';
-import residuosSolidosNew from '@/assets/residuos-solidos-new.webp';
+import residuosSolidosNew from '@/assets/reciclagem.jpg';
 
 const Services = () => {
   const [expandedService, setExpandedService] = useState<number | null>(null);
