@@ -120,13 +120,17 @@ const Contact = () => {
                   Informações de Contato
                 </h3>
                 <div className="grid sm:grid-cols-2 gap-6">
-                  {contactInfo.map((item, index) => (
-                    <Card key={index} className="border-border/50 hover:shadow-card transition-shadow duration-300">
-                      <CardHeader className="pb-3">
-                        <div className="flex items-center space-x-3">
-                          <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                            <item.icon className="w-5 h-5 text-primary-foreground" />
-                          </div>
+                   {contactInfo.map((item, index) => (
+                     <Card key={index} className="border-border/50 hover:shadow-card transition-shadow duration-300">
+                       <CardHeader className="pb-3">
+                         <div className="flex items-center space-x-3">
+                           <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                             {item.icon === WhatsAppIcon ? (
+                               <WhatsAppIcon size={20} className="text-primary-foreground" />
+                             ) : (
+                               <item.icon className="w-5 h-5 text-primary-foreground" />
+                             )}
+                           </div>
                           <CardTitle className="text-lg text-foreground">
                             {item.title}
                           </CardTitle>
