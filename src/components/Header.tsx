@@ -23,7 +23,8 @@ const Header = () => {
             <img 
               src="/lovable-uploads/fcf401fe-3388-42b7-8866-12a428c4f724.png" 
               alt="HIDROSPHERA Logo" 
-              className="h-12 w-auto"
+              className="h-16 w-auto hover:scale-105 transition-transform duration-300 cursor-pointer"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             />
           </div>
 
