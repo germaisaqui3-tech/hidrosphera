@@ -5,13 +5,33 @@ import { Menu, X } from 'lucide-react';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToSection = (sectionId: string) => {
+    // Se não estamos na página inicial, navegue para ela primeiro
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerHeight = 120; // Altura do header + padding
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const menuItems = [
-    { label: 'Início', href: '/#home' },
-    { label: 'Sobre', href: '/#about' },
-    { label: 'Serviços', href: '/#services' },
-    // { label: 'Parceiros', href: '/#clients' },
-    // { label: 'Portfólio', href: '/#portfolio' },
-    { label: 'Contato', href: '/#contact' },
+    { label: 'Início', action: () => window.scrollTo({ top: 0, behavior: 'smooth' }) },
+    { label: 'Sobre', action: () => scrollToSection('about') },
+    { label: 'Serviços', action: () => scrollToSection('services') },
+    // { label: 'Parceiros', action: () => scrollToSection('clients') },
+    // { label: 'Portfólio', action: () => scrollToSection('portfolio') },
+    { label: 'Contato', action: () => scrollToSection('contact') },
   ];
 
   return (
@@ -31,13 +51,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
-              <a
+              <button
                 key={item.label}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                onClick={item.action}
+                className="text-foreground hover:text-primary transition-colors duration-300 font-medium bg-transparent border-none cursor-pointer"
               >
                 {item.label}
-              </a>
+              </button>
             ))}
           </nav>
 
@@ -46,7 +66,7 @@ const Header = () => {
             <Button 
               variant="hero" 
               size="sm"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => scrollToSection('contact')}
             >
               Entre em Contato
             </Button>
@@ -70,20 +90,25 @@ const Header = () => {
           <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col space-y-4">
               {menuItems.map((item) => (
-                <a
+                <button
                   key={item.label}
-                  href={item.href}
-                  className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    item.action();
+                    setIsMenuOpen(false);
+                  }}
+                  className="text-foreground hover:text-primary transition-colors duration-300 font-medium bg-transparent border-none cursor-pointer text-left"
                 >
                   {item.label}
-                </a>
+                </button>
               ))}
               <Button 
                 variant="hero" 
                 size="sm" 
                 className="w-fit"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => {
+                  scrollToSection('contact');
+                  setIsMenuOpen(false);
+                }}
               >
                 Entre em Contato
               </Button>
