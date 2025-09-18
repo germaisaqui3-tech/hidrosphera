@@ -17,8 +17,8 @@ const Footer = () => {
       { label: 'Licenciamento', href: '#services' }
     ],
     legal: [
-      { label: 'Política de Privacidade', href: '#privacy' },
-      { label: 'Termos de Uso', href: '#terms' },
+      { label: 'Política de Privacidade', href: '/privacy' },
+      { label: 'Termos de Uso', href: '/terms' },
       // { label: 'Certificações', href: '#certifications' },
       // { label: 'Compliance', href: '#compliance' }
     ]
