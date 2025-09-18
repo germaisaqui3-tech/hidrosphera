@@ -6,12 +6,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { label: 'Início', href: '#home' },
-    { label: 'Sobre', href: '#about' },
-    { label: 'Serviços', href: '#services' },
-    // { label: 'Parceiros', href: '#clients' },
-    // { label: 'Portfólio', href: '#portfolio' },
-    { label: 'Contato', href: '#contact' },
+    { label: 'Início', href: '/#home' },
+    { label: 'Sobre', href: '/#about' },
+    { label: 'Serviços', href: '/#services' },
+    // { label: 'Parceiros', href: '/#clients' },
+    // { label: 'Portfólio', href: '/#portfolio' },
+    { label: 'Contato', href: '/#contact' },
   ];
 
   return (
