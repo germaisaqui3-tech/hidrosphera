@@ -25,9 +25,9 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
+    // { icon: Facebook, href: '#', label: 'Facebook' },
     // { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin', label: 'LinkedIn' },
+    // { icon: Linkedin, href: 'https://www.linkedin.com/in/hidrosphera-engenharia-ambiental-6ba953114/', label: 'LinkedIn' },
     // { icon: Twitter, href: '#', label: 'Twitter' }
   ];
 
