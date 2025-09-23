@@ -200,7 +200,7 @@ const Services = () => {
                   </p>
                   
                   {/* Stats */}
-                  <div className="flex flex-wrap gap-6 justify-center md:justify-start mb-6">
+                  {/* <div className="flex flex-wrap gap-6 justify-center md:justify-start mb-6">
                     <div className="text-center">
                       <div className="text-2xl font-bold text-primary">15+</div>
                       <div className="text-sm text-muted-foreground">Anos de experiência</div>
@@ -213,7 +213,7 @@ const Services = () => {
                       <div className="text-2xl font-bold text-primary">98%</div>
                       <div className="text-sm text-muted-foreground">Satisfação do cliente</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 
                 {/* Right Content - Buttons */}
